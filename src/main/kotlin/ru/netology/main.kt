@@ -1,15 +1,15 @@
 package ru.netology
 
 fun main() {
-    val amount = 70_000_000
-    println(commission(amount).toInt())
+    val amount = 70_000_00
+    println(commission(amount))
 }
 
-fun commission(sum: Int): Double {
-    val commis = sum * 0.0075
-    if (commis > 35_000) {
-        return commis
+fun commission(sum: Int): Int {
+    val commis = sum * 0.075
+    if (commis > 35_00) {
+        return commis.toInt()
     } else {
-        return 35000.00
+        return 35_00
     }
 }
